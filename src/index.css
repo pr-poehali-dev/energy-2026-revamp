@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 13% 13%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 13%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 13%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 45 95% 50%;
-    --primary-foreground: 220 13% 13%;
+    --primary: 30 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 21 84% 54%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 0 0% 0%;
 
-    --accent: 244 24% 36%;
+    --accent: 0 0% 15%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 0 0% 64%;
-    --muted-foreground: 220 13% 27%;
+    --muted: 0 0% 50%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 45 95% 50%;
+    --ring: 30 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -45,7 +45,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Outfit", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   h1,
@@ -54,13 +54,17 @@
   h4,
   h5,
   h6 {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 600;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
   }
 }
 
 @layer utilities {
-  .text-gradient {
+  .text-gradient-orange {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-orange {
+    @apply bg-gradient-to-r from-primary to-secondary;
   }
 }
