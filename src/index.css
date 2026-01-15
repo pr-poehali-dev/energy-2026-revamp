@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 98%;
+    --foreground: 220 13% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 220 13% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 220 13% 13%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 45 95% 50%;
+    --primary-foreground: 220 13% 13%;
 
-    --secondary: 262 83% 58%;
+    --secondary: 21 84% 54%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 25 95% 53%;
+    --accent: 244 24% 36%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 64%;
+    --muted-foreground: 220 13% 27%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 199 89% 48%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 45 95% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
   }
 }
 
@@ -45,7 +45,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    font-family: "Outfit", sans-serif;
   }
 
   h1,
@@ -54,21 +54,13 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
-  }
-
-  .bg-gradient-energy {
-    @apply bg-gradient-to-br from-primary via-secondary to-accent;
-  }
-
-  .glass-effect {
-    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 }
